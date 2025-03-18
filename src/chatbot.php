@@ -1,6 +1,6 @@
 <?php
 
-define("DB_FILE", "chatbot.json");
+define("DB_FILE", "../data/chatbot.json");
 
 // Load chat history
 function loadDatabase() {

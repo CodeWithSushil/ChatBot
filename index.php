@@ -29,7 +29,7 @@
     let chatbox = document.getElementById("chatbox");
     chatbox.innerHTML += `<div class="message"><strong>You:</strong> ${message}</div>`;
 
-    fetch('chatbot.php', {
+    fetch('./src/chatbot.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: `message=${encodeURIComponent(message)}&previousMessage=${encodeURIComponent(previousMessage)}`
